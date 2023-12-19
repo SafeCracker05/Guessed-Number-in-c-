@@ -99,3 +99,16 @@ printf("Your number is: %d", guessed_number);
 The final result, the guessed number, is displayed to the user.
 
 This code structure makes it clear and organized, enhancing readability and maintainability.
+
+Number Positioning Strategy:
+Each card is designed in a way that the numbers in the top-left corner contribute to the final sum, corresponding to the user's chosen number. Here's an analysis of the strategy:
+
+Top-Left Number:
+The number in the top-left corner of each card appears to play a crucial role.
+These top-left numbers are included in the array rep_arr[6], which is used for the final decimal representation.
+Card Structure:
+Each card has a 5x6 grid structure.
+Numbers are distributed to form a matrix, and the top-left number is often unique for each card.
+Calculation of the Final Sum:
+The final sum is calculated by adding the top-left numbers of the cards where the user has indicated their number is present (using the binary_arr array).
+By strategically placing numbers in the top-left corners of each card, the program ensures that the sum of these numbers corresponds to the user's chosen number. This design allows for an interactive and engaging guessing game where the user's input on each card narrows down the possibilities, ultimately leading to the identification of the chosen number.
